@@ -1,0 +1,28 @@
+<section class="hero page-width" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <div class="hero-overline"><span class="red-dot"></span> 一部可以漫游的东方异兽图鉴</div>
+    <h1 id="hero-title">山海之间，<br>万物<span>有灵。</span></h1>
+    <p class="hero-description">循着古籍的文字，走进奇异而辽阔的东方。<br>遇见九尾之狐、五彩之凤，与那些未曾见过的生灵。</p>
+    <div class="hero-actions"><a class="button primary" href="#catalog">翻开图鉴 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button class="button quiet" data-random type="button"><svg class="icon" aria-hidden="true"><use href="#i-shuffle"/></svg>偶遇一只异兽</button></div>
+    <div class="hero-numbers"><div><strong>266</strong><span>绘图条目</span></div><div><strong>7</strong><span>主题篇卷</span></div><div class="hero-number-note">一兽一画<br>有名有据</div></div>
+  </div>
+  <div class="hero-art">
+    <div class="art-orbit" aria-hidden="true"></div>
+    <span class="vertical-note" aria-hidden="true">青丘之山 · 有兽焉</span>
+    <a class="hero-painting" href="creatures/008/" data-open="008" aria-label="查看九尾狐的图鉴"><img src="assets/creatures/008.webp" width="1254" height="1254" alt="青丘九尾狐，白色狐身与舒展的九条长尾，立于淡墨山水之间" fetchpriority="high"><span class="hero-art-label"><span><small>南山经 · 第 008 号</small><strong>九尾狐</strong></span><span class="round-arrow" aria-hidden="true">↗</span></span></a>
+    <div class="art-seal" aria-hidden="true">有<br>灵</div>
+    <p class="art-caption">「有兽焉，其状如狐而九尾。」</p>
+  </div>
+</section>
+<div class="chapter-ribbon"><div class="page-width"><span>山之南，海之北</span><span class="ribbon-middle">珍禽 · 异兽 · 水族 · 神灵</span><span>循文字入境，借丹青相逢 <span aria-hidden="true">↘</span></span></div></div>
+<section class="catalog page-width" id="catalog" aria-labelledby="catalog-title">
+  <div class="catalog-heading"><div><span class="kicker">EXPLORE THE BESTIARY</span><h2 id="catalog-title">翻山阅海，遇见异兽<span class="tiny-seal" aria-hidden="true">图鉴</span></h2></div><button class="text-link share-site" data-share-site type="button"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>分享图鉴</button></div>
+  <div class="search-row"><div class="search-box"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><label class="visually-hidden" for="search">搜索异兽名称、形貌或出处</label><input id="search" type="search" placeholder="寻找一只异兽，或试试「九尾」「人面」" autocomplete="off" maxlength="120"><button class="clear-search" type="button" aria-label="清空搜索" hidden><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><kbd aria-hidden="true">/</kbd></div><button class="collection-toggle" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"/></svg><span>只看收藏</span></button></div>
+  <div class="filters" id="filters" aria-label="按篇卷筛选">{{FILTERS}}</div>
+  <div class="catalog-meta"><p id="result-count" role="status" aria-live="polite">共 <b>266</b> 位山海生灵，等你相识</p><label class="sort-control">排列 <select id="sort" aria-label="图鉴排序"><option value="recommended">精选在前</option><option value="number">按图鉴编号</option><option value="name">按名称排序</option></select></label></div>
+  <div class="creature-grid" id="creature-grid">{{CARDS}}</div>
+  <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">山海茫茫</span><h3>暂未寻得这位生灵</h3><p>换个名字或形貌关键词，再去山海间找找。</p><button class="button outline" data-reset type="button">重览全部异兽</button></div>
+  <div class="load-area"><p id="load-progress">已展卷 24 / 266</p><button class="button outline" id="load-more" type="button">继续翻阅 <span aria-hidden="true">↓</span></button></div>
+  <noscript><p>当前浏览器未启用 JavaScript。仍可点击下方完整目录查看每一条异兽的图片、介绍与原文。</p>{{NOSCRIPT_LINKS}}</noscript>
+</section>
+<section class="discovery page-width"><div class="discovery-art" aria-hidden="true"><img src="assets/thumbs/239.webp" width="640" height="640" alt="" loading="lazy"></div><div><span class="kicker">A LITTLE SERENDIPITY</span><h2>下一次相遇，会是谁？</h2><p>不必知道名字。让好奇心带路，翻开山海的另一页。</p></div><button class="button primary" data-random type="button"><svg class="icon" aria-hidden="true"><use href="#i-shuffle"/></svg>随缘遇见</button></section>

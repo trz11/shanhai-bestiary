@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="山海异兽录">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta name="twitter:card" content="summary_large_image">
+  {{CANONICAL}}
+  <link rel="icon" href="{{BASE}}assets/seal.svg" type="image/svg+xml">
+  <link rel="preload" href="{{BASE}}assets/shanhai-serif.woff2" as="font" type="font/woff2" crossorigin>
+  {{PRELOAD}}
+  <link rel="stylesheet" href="{{BASE}}assets/styles.css">
+  <script src="{{BASE}}assets/catalog.js" defer></script>
+  <script src="{{BASE}}assets/app.js" defer></script>
+</head>
+<body data-base="{{BASE}}" data-creature="{{CREATURE}}">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="masthead">
+    <div class="masthead-inner page-width">
+      <a class="brand" href="{{BASE}}" aria-label="山海异兽录首页">
+        <span class="seal" aria-hidden="true">山海</span>
+        <span class="brand-name">山海异兽录<small>THE SHANHAI BESTIARY</small></span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="{{BASE}}#catalog" class="nav-catalog">异兽图鉴</a>
+        <a href="{{BASE}}#about">关于山海</a>
+      </nav>
+      <button class="nav-save" type="button" data-show-saved><svg class="icon" aria-hidden="true"><use href="#i-bookmark"/></svg><span>我的收藏</span><b class="saved-count">0</b></button>
+    </div>
+  </header>
+  <main id="main">{{MAIN}}</main>
+  <section class="about page-width" id="about" aria-labelledby="about-heading">
+    <div><span class="kicker">ABOUT THE COLLECTION</span><h2 id="about-heading">古书一卷，想象无边。</h2></div>
+    <div class="about-copy"><p>《山海经》里的山川与奇异生命，在这里重新相遇。这份图鉴收录 266 个绘图条目，保留名字、形貌介绍与原文出处，邀你在古籍与想象之间漫游。</p><p class="fine">插画由 AI 依据文字生成，属于现代艺术复原。266 为本图鉴条目数，包含同名异形与 30 条兽形神灵，并非独立物种的权威总数。个别图像的形貌偏差已在详情注明；古籍中的药效与灾异记述不作为现实建议。</p><a class="text-link" href="https://zh.wikisource.org/wiki/山海經" target="_blank" rel="noopener noreferrer">阅读《山海经》原文 <span aria-hidden="true">↗</span></a><p class="source-credit">原文与摘录来源：维基文库《山海經》各篇章。现代整理及注释如受版权保护，依来源页适用的 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">CC BY-SA</a> 条款使用；介绍文字为现代转述。</p></div>
+  </section>
+  <footer class="footer page-width"><span class="footer-brand">山海异兽录 <i>山海有尽，想象无穷。</i></span><span>二六六幅 · 七卷漫游</span><a href="#" class="back-top">回到页首 ↑</a></footer>
+  <dialog id="creature-dialog" class="creature-dialog" aria-labelledby="dialog-name"><button class="dialog-close icon-button" aria-label="关闭异兽详情" type="button"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div id="dialog-content"></div></dialog>
+  <dialog id="share-dialog" class="share-dialog" aria-labelledby="share-title"><button class="share-close icon-button" aria-label="关闭分享窗口" type="button"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><span class="kicker">SHARE THE WONDER</span><h2 id="share-title">把这份山海，分享出去。</h2><p>复制链接，邀请朋友一同探索。</p><label class="visually-hidden" for="share-url">分享链接</label><input id="share-url" readonly><button class="button primary" id="copy-link" type="button">复制链接 <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button><p class="share-hint fine"></p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-symbols" aria-hidden="true"><defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4Z"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 6h3c5 0 7 12 12 12h3m-4-4 4 4-4 4M3 18h3c1.5 0 2.8-1.1 4-3m4-6c1.2-1.9 2.5-3 4-3h3m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M6 10H4v11h16V10h-2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v12h5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></symbol>
+  </defs></svg>
+</body>
+</html>

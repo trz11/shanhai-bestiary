@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trz11.github.io/shanhai-bestiary/sitemap.xml
